@@ -14,5 +14,6 @@ Go to site '(ipv4 address):3001'
 
 ### Some helpful commands
 
-To check containers: sudo docker container ls 
-To remove containers: sudo docker-compose down 
+To check containers: `sudo docker container ls`
+
+To remove containers: `sudo docker-compose down` 

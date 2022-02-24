@@ -1,63 +1,18 @@
-# MERN Stack Boilerplate
+# MERN Stack Deployment
 
-## Installations
-
-### Node
-
-* For Linux:
-```
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-* For Mac:
-```
-brew install node
-```
-
-### MongoDB
-
-Install the community edition [here](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials).
-
-
-### React
+## Build and Run
 
 ```
-npm install -g create-react-app
+sudo docker-compose -f docker-compose.yml up –build 
 ```
 
-* To create a new React app:
-```
-create-react-app name_of_app
-```
+Run: `ifconfig -a`   
+Find ipv4 address 
 
-* To run the app, cd into the directory and do:
-```
-npm start
-```
-
-## Running the boilerplate
-
-* Run Mongo daemon:
-```
-sudo mongod
-```
-Mongo will be running on port 27017.
+Go to site '(ipv4 address):3001' 
 
 
-* Run Express Backend:
-```
-cd backend/
-npm install
-npm start
-```
+### Some helpful commands
 
-* Run React Frontend:
-```
-cd frontend
-npm install/
-npm start
-```
-
-Navigate to [http://localhost:3000/](http://localhost:3000/) in your browser.
-
+To check containers: sudo docker container ls 
+To remove containers: sudo docker-compose down 
